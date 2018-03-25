@@ -2,11 +2,11 @@ pragma solidity ^0.4.15;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
-import "../../contracts/Users.sol";
+import "../../contracts/IdeaStarter.sol";
 
-contract TestUsers {
+contract TestIdeaStarter {
 
-  function testUser() {
+  function testIdeaStarter() {
   }
 
 }

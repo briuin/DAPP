@@ -2,7 +2,7 @@
   <div id="board">
     <h3>My Ideas({{myIdeas.length}})</h3>
     <ul>
-      <li v-for="idea in myIdeas">{{idea.name}}</li>
+      <li v-for="(idea,index) in myIdeas" :key="index">{{idea.name}}</li>
     </ul>
   </div>
 </template>

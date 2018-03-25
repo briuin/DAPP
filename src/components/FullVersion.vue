@@ -16,7 +16,7 @@
       </template>
     </div>
     <hr/>
-    <Idea v-for="idea in ideas" :idea="idea" :contractOwner="owner"></Idea>
+    <Idea v-for="(idea,index) in ideas" :idea="idea" :key="index" :contractOwner="owner"></Idea>
     <hr/>
     <h3>Token Holders</h3>
     <div>
@@ -26,7 +26,7 @@
           <th>Address</th>
           <th>Amount</th>
         </tr>
-        <tr v-for="(holder,index) in sortedTokenHolders">
+        <tr v-for="(holder,index) in sortedTokenHolders" :key="index">
           <td>{{index +1}}</td>
           <td>{{holder.address}}</td>
           <td>{{toNum(holder.amount)}}</td>
